@@ -125,4 +125,27 @@
    .footer-payment-method {
       margin: 30px auto;
    }
+   .hero-text {
+      font-size: 50px;
+      line-height: 55px;
+   }
+   .card-list-header-img {
+      display: none;
+   }
+   .card-image-container {
+      margin-left: 0;
+      justify-content: center;
+   }
+   .card-list-header {
+      border-radius: 24px;
+   }
+   footer {
+      margin-top: 100px;
+   }
+}
+
+@media (max-width: 576px) {
+   .footer-payment-method {
+      grid-template-columns: repeat(2, 1fr);
+   }
 }
