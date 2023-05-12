@@ -521,3 +521,50 @@ img.drupal:hover {
       width: 120px;
    }
 }
+
+.testimonial-container {
+   margin: 200px 0px;
+}
+
+button.slick-arrow.slick-prev::before,
+button.slick-arrow.slick-next::before {
+   height: 70px;
+   width: 70px;
+   padding: 10px;
+   background: #4277ff;
+   border-radius: 50%;
+}
+
+.client-list-title {
+   font-family: "Asap";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 28px;
+   color: #3f4654;
+}
+
+.single-client {
+   background: #ffffff;
+   border: 1px solid rgba(63, 70, 84, 0.1);
+   border-radius: 20px;
+}
+
+.slick-slide {
+   padding: 0 10px;
+}
+
+.slick-prev {
+   left: -45px !important;
+}
+
+.slider-container {
+   background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 3.39%,
+      #ffffff 49.96%,
+      rgba(255, 255, 255, 0) 96.54%
+   );
+   padding-top: 35px;
+   padding-bottom: 70px;
+}
