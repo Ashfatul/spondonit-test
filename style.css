@@ -169,32 +169,6 @@ span.hero-text-highlight-2::after {
    }
 }
 
-@media (max-width: 1310px) {
-   .hero-section-image::before {
-      height: 15%;
-   }
-
-   .hero-section-image::after {
-      bottom: 60%;
-      height: 12%;
-      width: 12%;
-      right: 20%;
-   }
-}
-
-@media (max-width: 992px) {
-   .hero-section-image::before {
-      height: 15%;
-   }
-
-   .hero-section-image::after {
-      bottom: 60%;
-      height: 12%;
-      width: 12%;
-      right: 20%;
-   }
-}
-
 /* Payment gateway css */
 
 /* payment gateway */
@@ -433,96 +407,8 @@ img.drupal:hover {
    transition: 0.5s ease-in-out;
 }
 
-@media (max-width: 992px) {
-   .center-of-orbit img {
-      height: 100px;
-      width: 100px;
-      padding: 20px;
-   }
-
-   .inner-orbit,
-   .outer-orbit {
-      padding: 50px;
-   }
-   img.paypal {
-      height: 50px;
-      width: 50px;
-      padding: 20px;
-      top: -30px;
-   }
-
-   img.drupal {
-      height: 35px;
-      width: 35px;
-      padding: 10px;
-      left: 15px;
-      top: 20px;
-   }
-
-   img.paytm {
-      height: 35px;
-      width: 35px;
-      padding: 10px;
-      top: 40%;
-   }
-
-   img.jazzcash {
-      padding: 10px;
-      height: 40px;
-      width: 40px;
-   }
-
-   img.googlepay {
-      padding: 10px;
-      height: 30px;
-      width: 30px;
-   }
-
-   img.instamojo {
-      padding: 10px;
-      height: 45px;
-      width: 45px;
-      right: -20px;
-   }
-
-   img.flutter {
-      padding: 10px;
-      height: 35px;
-      width: 35px;
-   }
-
-   img.bank {
-      padding: 10px;
-      height: 40px;
-      width: 40px;
-      right: 20px;
-      bottom: 20px;
-   }
-
-   img.stripe {
-      padding: 10px;
-      width: 45px;
-      height: 45px;
-      left: 30px;
-      bottom: 10px;
-   }
-}
-
-@media (max-width: 767px) {
-   .card-list-header-img {
-      width: 150px;
-      height: auto;
-      position: absolute;
-      top: 10px;
-      left: -50px;
-   }
-
-   .top-logo {
-      width: 120px;
-   }
-}
-
-.testimonial-container {
+.testimonial-container,
+.dashboard-preview-container {
    margin: 200px 0px;
 }
 
@@ -567,4 +453,59 @@ button.slick-arrow.slick-next::before {
    );
    padding-top: 35px;
    padding-bottom: 70px;
+}
+
+.software-collection-section {
+   background: linear-gradient(60.06deg, #4277ff -11.48%, #0657d0 159.3%);
+   border-radius: 10px 0px 0px 10px;
+   padding: 0px;
+   position: relative;
+   margin: 250px 0px;
+}
+
+.man-with-mike {
+   position: absolute;
+   bottom: 20px;
+   right: 0%;
+   height: 400px;
+   width: auto;
+}
+
+.software-collection-info h4,
+.software-collection-info p {
+   margin: 0;
+}
+
+.software-collection-info p {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 30px;
+}
+
+.software-collection-info h4 {
+   font-family: "Asap";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 46px;
+   color: #ffffff;
+}
+
+.view-all-btn {
+   font-family: "Asap";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 28px;
+   border-radius: 12px;
+   color: #5c6574;
+   background: #ffffff;
+   padding: 15px 25px;
+   border: none;
+}
+
+.vault-image {
+   padding: 60px 0px;
 }

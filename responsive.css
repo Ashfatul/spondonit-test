@@ -1,0 +1,119 @@
+@media (max-width: 1310px) {
+   .hero-section-image::before {
+      height: 15%;
+   }
+
+   .hero-section-image::after {
+      bottom: 60%;
+      height: 12%;
+      width: 12%;
+      right: 20%;
+   }
+}
+
+@media (max-width: 992px) {
+   .hero-section-image::before {
+      height: 15%;
+   }
+
+   .hero-section-image::after {
+      bottom: 60%;
+      height: 12%;
+      width: 12%;
+      right: 20%;
+   }
+
+   .center-of-orbit img {
+      height: 100px;
+      width: 100px;
+      padding: 20px;
+   }
+
+   .inner-orbit,
+   .outer-orbit {
+      padding: 50px;
+   }
+   img.paypal {
+      height: 50px;
+      width: 50px;
+      padding: 20px;
+      top: -30px;
+   }
+
+   img.drupal {
+      height: 35px;
+      width: 35px;
+      padding: 10px;
+      left: 15px;
+      top: 20px;
+   }
+
+   img.paytm {
+      height: 35px;
+      width: 35px;
+      padding: 10px;
+      top: 40%;
+   }
+
+   img.jazzcash {
+      padding: 10px;
+      height: 40px;
+      width: 40px;
+   }
+
+   img.googlepay {
+      padding: 10px;
+      height: 30px;
+      width: 30px;
+   }
+
+   img.instamojo {
+      padding: 10px;
+      height: 45px;
+      width: 45px;
+      right: -20px;
+   }
+
+   img.flutter {
+      padding: 10px;
+      height: 35px;
+      width: 35px;
+   }
+
+   img.bank {
+      padding: 10px;
+      height: 40px;
+      width: 40px;
+      right: 20px;
+      bottom: 20px;
+   }
+
+   img.stripe {
+      padding: 10px;
+      width: 45px;
+      height: 45px;
+      left: 30px;
+      bottom: 10px;
+   }
+}
+
+@media (max-width: 767px) {
+   .card-list-header-img {
+      width: 150px;
+      height: auto;
+      position: absolute;
+      top: 10px;
+      left: -50px;
+   }
+
+   .top-logo {
+      width: 120px;
+   }
+   .vault-image {
+      padding: 20px;
+   }
+   .software-collection-section {
+      margin: 0 !important;
+      border-radius: 10px;
+   }
+}
