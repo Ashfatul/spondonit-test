@@ -116,4 +116,13 @@
       margin: 0 !important;
       border-radius: 10px;
    }
+   .footer-section-title,
+   .contact-info-row .phone,
+   .contact-info-row .email,
+   .social-media-container {
+      justify-content: center;
+   }
+   .footer-payment-method {
+      margin: 30px auto;
+   }
 }
