@@ -9,11 +9,44 @@
       width: 12%;
       right: 20%;
    }
+   .testimonial-item {
+      padding: 50px;
+   }
+   .review-details {
+      font-size: 25px;
+      line-height: 30px;
+   }
+   .client-count-inner {
+      font-size: 40px;
+      line-height: 45px;
+      padding: 100px;
+   }
+   img.reviewer.second {
+      right: 30px;
+      top: 40px;
+   }
+
+   img.reviewer.third {
+      right: 30px;
+      bottom: 40px;
+   }
+
+   img.reviewer.fourth {
+      top: -40px;
+   }
+
+   img.reviewer.fifth {
+      bottom: -30px;
+   }
 }
 
 @media (max-width: 992px) {
    .hero-section-image::before {
       height: 15%;
+   }
+
+   .testimonial-container {
+      margin: 120px 0px;
    }
 
    .hero-section-image::after {
@@ -94,6 +127,46 @@
       height: 45px;
       left: 30px;
       bottom: 10px;
+   }
+   .client-count-inner {
+      padding: 50px;
+   }
+   .client-count-container {
+      padding: 80px;
+      padding-left: 0;
+   }
+   img.reviewer.first {
+      height: 55px;
+      width: 55px;
+   }
+
+   img.reviewer.second {
+      right: 80px;
+      top: 0px;
+      height: 45px;
+      width: 45px;
+   }
+
+   img.reviewer.third {
+      position: absolute;
+      right: 80px;
+      bottom: 0px;
+      height: 45px;
+      width: 45px;
+   }
+
+   img.reviewer.fourth {
+      left: 40%;
+      top: -20px;
+      height: 35px;
+      width: 35px;
+   }
+
+   img.reviewer.fifth {
+      left: 40%;
+      bottom: -20px;
+      height: 35px;
+      width: 35px;
    }
 }
 
@@ -183,5 +256,34 @@
       height: 40px;
       left: 0px;
       bottom: 20px;
+   }
+   .review-start-container img {
+      width: 30px;
+   }
+
+   .review-start-container {
+      margin-bottom: 20px;
+   }
+   .review-details {
+      font-size: 20px;
+      line-height: 25px;
+   }
+   .author .name {
+      font-size: 18px;
+      line-height: 20px;
+   }
+
+   .author .designation {
+      font-size: 15px;
+      line-height: 18px;
+   }
+
+   .review-author-container img {
+      width: 40px;
+      height: 40px;
+   }
+   .client-review-container {
+      margin-left: 0px;
+      border-radius: 0;
    }
 }
