@@ -15,62 +15,100 @@
    <body>
       <noscript>You need to enable JavaScript to run this app.</noscript>
 
-      <!-- Header Nav Section Start -->
-      <header
-         class="container container-custom padding-container bg-transparent"
-      >
-         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-               <a class="navbar-brand" href="#">
-                  <img src="./res/logo.png" alt="logo" class="top-logo" />
-               </a>
-               <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navBarTop"
-                  aria-controls="navBarTop"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-               >
-                  <span class="navbar-toggler-icon"></span>
-               </button>
+      <div class="hero-section default-bg container container-custom">
+         <!-- Header Nav Section Start -->
+         <header class="bg-transparent padding-container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                     <img src="./res/logo.png" alt="logo" class="top-logo" />
+                  </a>
+                  <button
+                     class="navbar-toggler"
+                     type="button"
+                     data-bs-toggle="collapse"
+                     data-bs-target="#navBarTop"
+                     aria-controls="navBarTop"
+                     aria-expanded="false"
+                     aria-label="Toggle navigation"
+                  >
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                     class="collapse navbar-collapse justify-content-end"
+                     id="navBarTop"
+                  >
+                     <ul
+                        class="navbar-nav me-end mb-2 mb-lg-0 align-items-center"
+                     >
+                        <li class="nav-item px-3">
+                           <a
+                              class="nav-link active"
+                              aria-current="page"
+                              href="#"
+                           >
+                              Home
+                           </a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                           <a class="nav-link" href="#"> Product </a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                           <a class="nav-link" href="#"> Blog </a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                           <a class="nav-link" href="#"> About </a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                           <a class="nav-link" href="#"> Contact </a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                           <button class="login-signup-btn">
+                              Login/Signup
+                           </button>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </header>
+         <!-- Header Nav Section End -->
+
+         <!-- Hero Section Start -->
+         <div class="container container-custom py-5 pe-0">
+            <div class="padding-left row">
+               <div class="col-lg-6 col-md-12 px-0 px-3">
+                  <h1 class="hero-text">
+                     We have developed <br />
+                     <span class="hero-text-highlight-1">incredible</span>
+                     tools to make <br />
+                     your life
+                     <span class="hero-text-highlight-2">easier.</span>
+                  </h1>
+
+                  <button class="view-products-btn">View Products</button>
+               </div>
+
                <div
-                  class="collapse navbar-collapse justify-content-end"
-                  id="navBarTop"
+                  class="col-lg-6 col-md-12 d-none d-md-block px-0 hero-section-image"
                >
-                  <ul class="navbar-nav me-end mb-2 mb-lg-0 align-items-center">
-                     <li class="nav-item px-3">
-                        <a class="nav-link active" aria-current="page" href="#">
-                           Home
-                        </a>
-                     </li>
-
-                     <li class="nav-item px-3">
-                        <a class="nav-link" href="#"> Product </a>
-                     </li>
-
-                     <li class="nav-item px-3">
-                        <a class="nav-link" href="#"> Blog </a>
-                     </li>
-
-                     <li class="nav-item px-3">
-                        <a class="nav-link" href="#"> About </a>
-                     </li>
-
-                     <li class="nav-item px-3">
-                        <a class="nav-link" href="#"> Contact </a>
-                     </li>
-
-                     <li class="nav-item px-3">
-                        <button class="login-signup-btn">Login/Signup</button>
-                     </li>
-                  </ul>
+                  <img
+                     src="./res/hero-section/main image.png"
+                     alt="hero section image"
+                     class="w-100"
+                  />
                </div>
             </div>
-         </nav>
-      </header>
-      <!-- Header Nav Section End -->
+
+            <div class="hero-slider-container text-center">slider here</div>
+         </div>
+         <!-- Hero Section End -->
+      </div>
 
       <script
          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

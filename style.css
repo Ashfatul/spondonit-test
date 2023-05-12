@@ -31,10 +31,21 @@
 body {
    background: #eff5fc;
 }
+
 /* style */
+
+.padding-left {
+   padding-left: 10%;
+}
+
+.padding-right {
+   padding-right: 10%;
+}
+
 .top-logo {
    width: 200px;
 }
+
 .login-signup-btn,
 .view-products-btn,
 .more-info-btn {
@@ -50,4 +61,136 @@ body {
    padding: 15px 25px;
    border: none;
    display: inline-block;
+}
+
+.view-products-btn {
+   margin-top: 50px;
+}
+
+.hero-section {
+   background-image: url("./res/hero-section/bg.png");
+   background-size: cover;
+   background-position: right;
+   background-repeat: no-repeat;
+   border-radius: 0px 0px 50% 50%;
+}
+
+.hero-text {
+   font-family: "Asap";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 64px;
+   line-height: 88px;
+   color: #5c6574;
+}
+.hero-text-highlight-1 {
+   position: relative;
+}
+
+span.hero-text-highlight-1::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 10px;
+   width: 100%;
+   background: rgba(252, 198, 60, 0.5);
+   border-radius: 41px;
+   z-index: -1;
+   height: 19px;
+}
+
+.hero-text-highlight-2 {
+   position: relative;
+}
+
+span.hero-text-highlight-2::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 10px;
+   width: 100%;
+   background: rgba(54, 237, 171, 0.5);
+   border-radius: 41px;
+   z-index: -1;
+   height: 19px;
+}
+
+.nav-item .nav-link {
+   font-size: 20px;
+   font-weight: 500;
+   font-family: "Asap";
+}
+
+.hero-section-image {
+   position: relative;
+}
+
+.hero-section-image::before {
+   content: "";
+   height: 30%;
+   width: 50%;
+   background-image: url("./res/hero-section/animated element.png");
+   filter: drop-shadow(-7px 7px 4px rgba(124, 42, 248, 0.1));
+   transform: rotate(9deg);
+   position: absolute;
+   top: 15%;
+   left: 20%;
+   z-index: 1;
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   animation: heroImageAnimation 1s infinite;
+}
+
+.hero-section-image::after {
+   content: "";
+   height: 20%;
+   width: 20%;
+   background-image: url("./res/hero-section/animated element2.png");
+   position: absolute;
+   bottom: 42%;
+   right: 15%;
+   z-index: 1;
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   animation: heroImageAnimation 1s infinite;
+}
+
+@keyframes heroImageAnimation {
+   0% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.1);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+@media (max-width: 1310px) {
+   .hero-section-image::before {
+      height: 15%;
+   }
+
+   .hero-section-image::after {
+      bottom: 60%;
+      height: 12%;
+      width: 12%;
+      right: 20%;
+   }
+}
+
+@media (max-width: 992px) {
+   .hero-section-image::before {
+      height: 15%;
+   }
+
+   .hero-section-image::after {
+      bottom: 60%;
+      height: 12%;
+      width: 12%;
+      right: 20%;
+   }
 }
