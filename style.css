@@ -1,0 +1,53 @@
+/* importing required fonts */
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@400;500&display=swap");
+
+/* universal style */
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Roboto", sans-serif;
+}
+
+/* container */
+.container-custom {
+   max-width: 1920px;
+}
+
+.padding-container {
+   padding: 0 10%;
+}
+
+.margin-left {
+   margin-left: 10% !important;
+}
+
+.margin-right {
+   margin-right: 10% !important;
+}
+
+body {
+   background: #eff5fc;
+}
+/* style */
+.top-logo {
+   width: 200px;
+}
+.login-signup-btn,
+.view-products-btn,
+.more-info-btn {
+   background: #4277ff;
+   border-radius: 12px;
+   font-family: "Roboto", sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 30px;
+   text-align: center;
+   color: #ffffff;
+   padding: 15px 25px;
+   border: none;
+   display: inline-block;
+}
