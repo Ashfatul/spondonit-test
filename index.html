@@ -19,6 +19,7 @@
          type="text/css"
          href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
       />
+      <link rel="stylesheet" href="slider.css" />
       <link rel="stylesheet" href="style.css" />
       <link rel="stylesheet" href="responsive.css" />
    </head>
@@ -115,7 +116,99 @@
                </div>
             </div>
 
-            <div class="hero-slider-container text-center">slider here</div>
+            <div class="hero-slider-container container container-custom">
+               <div id="hero-slider">
+                  <div class="dp-wrap horizontal">
+                     <div id="dp-slider">
+                        <div class="dp_item" data-class="1" data-position="1">
+                           <div class="dp-img">
+                              <img
+                                 class="img-fluid"
+                                 src="./res/hero-section/slider/Slider 1.png"
+                                 alt="slider 1"
+                              />
+                           </div>
+                        </div>
+
+                        <div class="dp_item" data-class="2" data-position="2">
+                           <div class="dp-img">
+                              <img
+                                 class="img-fluid"
+                                 src="./res/hero-section/slider/Slider 1.png"
+                                 alt="slider 2"
+                              />
+                           </div>
+                        </div>
+
+                        <div class="dp_item" data-class="3" data-position="3">
+                           <div class="dp-img">
+                              <img
+                                 class="img-fluid"
+                                 src="./res/hero-section/slider/Slider 1.png"
+                                 alt="slider 3"
+                              />
+                           </div>
+                        </div>
+                     </div>
+
+                     <span id="dp-next">
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 51.401 51.401"
+                        >
+                           <defs>
+                              <style>
+                                 .cls-1 {
+                                    fill: none;
+                                    stroke: #fa8c8c;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 7px;
+                                 }
+                              </style>
+                           </defs>
+                           <path
+                              id="Rectangle_4_Copy"
+                              data-name="Rectangle 4 Copy"
+                              class="cls-1"
+                              d="M32.246,0V33.178L0,31.953"
+                              transform="translate(0.094 25.276) rotate(-45)"
+                           />
+                        </svg>
+                     </span>
+
+                     <span id="dp-prev">
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 51.401 51.401"
+                        >
+                           <defs>
+                              <style>
+                                 .cls-1 {
+                                    fill: none;
+                                    stroke: #fa8c8c;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 7px;
+                                 }
+                              </style>
+                           </defs>
+                           <path
+                              id="Rectangle_4_Copy"
+                              data-name="Rectangle 4 Copy"
+                              class="cls-1"
+                              d="M32.246,0V33.178L0,31.953"
+                              transform="translate(0.094 25.276) rotate(-45)"
+                           />
+                        </svg>
+                     </span>
+
+                     <ul id="dp-dots">
+                        <li data-class="1" class="active"></li>
+                        <li data-class="2"></li>
+                        <li data-class="3"></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
          </div>
          <!-- Hero Section End -->
       </div>
@@ -1116,6 +1209,7 @@
          crossorigin="anonymous"
       ></script>
       <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="./slider.js"></script>
       <script src="./script.js"></script>
    </body>
 </html>

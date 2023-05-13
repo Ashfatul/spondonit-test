@@ -81,3 +81,14 @@ $("#testimonial-slider").on("afterChange", function () {
    $(".reviewer").removeClass("active");
    $(`.reviewer${dataId}`).addClass("active");
 });
+
+// Stack slider
+
+$("#hero-slider").stack_slider({
+   autoPlaySpeed: 3000,
+   autoPlay: true,
+   dots: true,
+   arrows: false,
+   drag: true,
+   direction: "horizontal",
+});
