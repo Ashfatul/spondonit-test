@@ -82,6 +82,8 @@ div#dp-slider {
 }
 #dp-dots li.active {
    background: #4277ff;
+   width: 30px;
+   border-radius: 10px;
 }
 .dp-content,
 .dp-img {

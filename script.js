@@ -2,7 +2,7 @@ $("#client-slider").slick({
    dots: false,
    infinite: true,
    speed: 500,
-   slidesToShow: 1,
+   slidesToShow: 4,
    slidesToScroll: 1,
    arrows: true,
    autoplay: true,
@@ -86,7 +86,7 @@ $("#testimonial-slider").on("afterChange", function () {
 
 $("#hero-slider").stack_slider({
    autoPlaySpeed: 3000,
-   autoPlay: false,
+   autoPlay: true,
    dots: true,
    arrows: false,
    drag: true,
