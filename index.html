@@ -695,53 +695,32 @@
                   <nav class="panel-tab-container">
                      <div class="nav nav-tabs" role="tablist">
                         <button
-                           class="nav-link active"
-                           data-bs-toggle="pill"
-                           data-bs-target="#admin"
-                           type="button"
-                           role="tab"
-                           aria-selected="true"
+                           class="nav-link preview adminBtn"
+                           data-filter="admin"
                         >
                            Admin
                         </button>
-                        <button
-                           class="nav-link"
-                           data-bs-toggle="pill"
-                           data-bs-target="#customer"
-                           type="button"
-                           role="tab"
-                           aria-selected="false"
-                        >
+                        <button class="nav-link preview" data-filter="customer">
                            Customer
                         </button>
-                        <button
-                           class="nav-link"
-                           data-bs-toggle="pill"
-                           data-bs-target="#seller"
-                           type="button"
-                           role="tab"
-                           aria-selected="false"
-                        >
+                        <button class="nav-link preview" data-filter="seller">
                            Seller
                         </button>
                      </div>
                   </nav>
 
-                  <div class="tab-content">
-                     <div
-                        class="tab-pane fade show active"
-                        role="tabpanel"
-                        id="admin"
-                     >
-                        <nav class="preview-item-list-container">
-                           <div class="nav nav-tabs" role="tablist">
+                  <div class="">
+                     <nav class="preview-item-list-container">
+                        <div class="nav nav-tabs" role="tablist">
+                           <div class="sidebarSlider">
                               <button
-                                 class="preview-item nav-link active"
+                                 class="preview-item nav-link dashboard"
                                  data-bs-toggle="pill"
                                  data-bs-target="#admin-dashboard"
                                  type="button"
                                  role="tab"
                                  aria-selected="true"
+                                 data-role="admin"
                               >
                                  Administration Dashboard
                               </button>
@@ -749,10 +728,11 @@
                               <button
                                  class="preview-item nav-link"
                                  data-bs-toggle="pill"
-                                 data-bs-target="#admin-all-member"
+                                 data-bs-target="#admin-support-ticket"
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="admin"
                               >
                                  All Member List
                               </button>
@@ -764,6 +744,7 @@
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="admin"
                               >
                                  Monthly Sales Report
                               </button>
@@ -775,6 +756,7 @@
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="admin"
                               >
                                  Support Ticket
                               </button>
@@ -786,6 +768,7 @@
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="admin"
                               >
                                  Monthly Sales Report
                               </button>
@@ -797,6 +780,7 @@
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="admin"
                               >
                                  Tools & Setting
                               </button>
@@ -808,6 +792,7 @@
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="admin"
                               >
                                  Monthly Sales Report
                               </button>
@@ -819,16 +804,11 @@
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="admin"
                               >
                                  Others Major Feature
                               </button>
-                           </div>
-                        </nav>
-                     </div>
 
-                     <div class="tab-pane fade" role="tabpanel" id="customer">
-                        <nav class="preview-item-list-container">
-                           <div class="nav nav-tabs" role="tablist">
                               <button
                                  class="preview-item nav-link"
                                  data-bs-toggle="pill"
@@ -836,6 +816,7 @@
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="customer"
                               >
                                  Order Status
                               </button>
@@ -847,6 +828,7 @@
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="customer"
                               >
                                  Wishlist
                               </button>
@@ -858,6 +840,7 @@
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="customer"
                               >
                                  Messages
                               </button>
@@ -869,16 +852,11 @@
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="customer"
                               >
                                  Feedback
                               </button>
-                           </div>
-                        </nav>
-                     </div>
 
-                     <div class="tab-pane fade" role="tabpanel" id="seller">
-                        <nav class="preview-item-list-container">
-                           <div class="nav nav-tabs" role="tablist">
                               <button
                                  class="preview-item nav-link"
                                  data-bs-toggle="pill"
@@ -886,6 +864,7 @@
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="seller"
                               >
                                  Product List
                               </button>
@@ -897,12 +876,13 @@
                                  type="button"
                                  role="tab"
                                  aria-selected="false"
+                                 data-role="seller"
                               >
                                  Support
                               </button>
                            </div>
-                        </nav>
-                     </div>
+                        </div>
+                     </nav>
                   </div>
                </div>
             </div>
@@ -919,7 +899,7 @@
                   </p>
                   <div class="tab-content preview-slider">
                      <div
-                        class="tab-pane fade show active slider"
+                        class="tab-pane fade show slider"
                         role="tabpanel"
                         id="admin-dashboard"
                      >

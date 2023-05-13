@@ -92,3 +92,27 @@ $("#hero-slider").stack_slider({
    drag: true,
    direction: "horizontal",
 });
+
+// Filter Dashboard Preview
+
+$(document).on("click", ".nav-link.preview", function () {
+   const filter = $(this).data("filter");
+
+   $(".nav-link.preview").removeClass("active");
+   $(this).addClass("active");
+   // $(`[data-filter="${filter}"]`).addClass("active");
+
+   if (filter == "admin") {
+      $(".preview-item").hide();
+      $('[data-role="admin"].preview-item').fadeIn(1000);
+   } else if (filter == "customer") {
+      $(".preview-item").hide();
+      $('[data-role="customer"].preview-item').fadeIn(1000);
+   } else if (filter == "seller") {
+      $(".preview-item").hide();
+      $('[data-role="seller"].preview-item').fadeIn(1000);
+   }
+});
+
+$(".adminBtn").click();
+$(".preview-item.nav-link.dashboard").click();

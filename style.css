@@ -953,6 +953,7 @@ img.reviewer:hover {
 
 .preview-item-list-container .nav-tabs {
    border-bottom: none;
+   display: block;
 }
 
 .tab-content {
@@ -1103,4 +1104,8 @@ p.preview-slider-description {
 
 .mail-submit {
    min-width: 60px;
+}
+
+.preview-item-list-container {
+   margin-top: 35px;
 }
