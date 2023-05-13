@@ -74,8 +74,13 @@
    #client-slider .slick-next {
       right: -80px !important;
    }
+   h2.preview-slider-title {
+      font-size: 35px;
+      line-height: 40px;
+      margin-bottom: 20px;
+   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
    .hero-section-image::before {
       height: 15%;
    }
@@ -230,6 +235,34 @@
       padding-top: 35px;
       padding-bottom: 50px;
    }
+   .preview-option-panel {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      z-index: 1;
+      width: 80%;
+      margin: auto;
+      border-left: none;
+      margin-bottom: 20px;
+   }
+   .preview-slider {
+      width: 80%;
+      margin: auto;
+      border-radius: 40px;
+      padding: 20px;
+   }
+   .preview-slider-title,
+   .preview-slider-description,
+   .tab-content.preview-slider {
+      width: 90%;
+      margin: 5%;
+   }
+   h2.preview-slider-title {
+      margin-top: 20px;
+   }
+   .dashboard-preview-slider .slick-slide {
+      border-radius: 25px;
+   }
 }
 
 @media (max-width: 767px) {
@@ -299,6 +332,10 @@
    }
    .card-info h3 {
       padding-bottom: 20px;
+   }
+   .testimonial-container,
+   .dashboard-preview-container {
+      margin: 100px 0px;
    }
 }
 
@@ -405,6 +442,14 @@
       font-size: 30px;
       line-height: 35px;
    }
+   .panel-title {
+      font-size: 25px;
+      line-height: 30px;
+   }
+   .panel-tab-container .nav-tabs .nav-link {
+      margin: 10px 3px;
+      padding: 5px 10px;
+   }
 }
 
 @media (max-width: 420px) {
@@ -422,8 +467,60 @@
    .hero-text {
       font-size: 25px;
       line-height: 30px;
+      padding-right: 0;
+      text-align: center;
    }
    .hero-section-padding {
       padding-bottom: 100px;
+   }
+   .panel-tab-container::before {
+      display: none;
+   }
+   .panel-tab-container .nav-tabs .nav-link {
+      width: 100%;
+   }
+   .preview-item-list-container .preview-item.nav-link {
+      font-size: 15px;
+      line-height: 18px;
+      padding: 15px;
+   }
+   .tab-content {
+      margin-top: 20px;
+   }
+   h2.preview-slider-title {
+      font-size: 25px;
+      line-height: 28px;
+   }
+   .subscribe-form-container input {
+      padding: 10px;
+   }
+   .mail-submit {
+      padding: 10px 15px;
+   }
+   .padding-container {
+      padding: 0 5%;
+   }
+   .padding-left {
+      padding-left: 0;
+   }
+   .padding-right {
+      padding-right: 0;
+   }
+   .preview-option-panel,
+   .preview-slider {
+      width: 90%;
+   }
+   .software-collection-container {
+      padding: 0;
+   }
+   .software-collection-section {
+      border-radius: 0;
+   }
+   .no-margin {
+      margin-right: 0 !important;
+   }
+   .view-product-btn-container {
+      display: flex;
+      justify-content: center;
    }
 }

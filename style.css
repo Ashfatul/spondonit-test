@@ -1074,3 +1074,7 @@ p.preview-slider-description {
    padding-bottom: 200px;
    position: relative;
 }
+
+.mail-submit {
+   min-width: 60px;
+}
