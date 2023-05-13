@@ -1,3 +1,10 @@
+@media (max-width: 1500px) {
+   .hero-text {
+      font-size: 55px;
+      line-height: 65px;
+   }
+}
+
 @media (max-width: 1310px) {
    .hero-section-image::before {
       height: 15%;
@@ -38,8 +45,36 @@
    img.reviewer.fifth {
       bottom: -30px;
    }
+   #dp-slider,
+   .dp-img img {
+      height: 330px;
+      width: 650px;
+   }
+   .dp-content,
+   .dp-img {
+      text-align: left;
+      height: 330px;
+      width: 650px;
+   }
+   .view-products-btn {
+      margin-top: 30px;
+   }
+   .hero-section-padding {
+      padding-top: 50px;
+   }
+   .hero-slider-container {
+      margin-top: 50px;
+   }
 }
+@media (max-width: 1120px) {
+   #client-slider .slick-prev {
+      left: -80px !important;
+   }
 
+   #client-slider .slick-next {
+      right: -80px !important;
+   }
+}
 @media (max-width: 992px) {
    .hero-section-image::before {
       height: 15%;
@@ -168,6 +203,33 @@
       height: 35px;
       width: 35px;
    }
+   #dp-slider,
+   .dp-img img {
+      height: 280px;
+      width: 550px;
+   }
+   .dp-content,
+   .dp-img {
+      text-align: left;
+      height: 280px;
+      width: 550px;
+   }
+   .hero-text {
+      padding-right: 10%;
+   }
+   .payment-gateway-section {
+      margin-top: 250px;
+   }
+   .review-author-container {
+      min-width: auto;
+   }
+   .padding-container {
+      padding: 0 15%;
+   }
+   .slider-container {
+      padding-top: 35px;
+      padding-bottom: 50px;
+   }
 }
 
 @media (max-width: 767px) {
@@ -215,8 +277,28 @@
    footer {
       margin-top: 100px;
    }
-   .review-author-container {
-      min-width: auto;
+   #dp-slider,
+   .dp-img img {
+      height: 200px;
+      width: 400px;
+   }
+   .dp-content,
+   .dp-img {
+      text-align: left;
+      height: 200px;
+      width: 400px;
+   }
+   .hero-section-padding {
+      padding-bottom: 150px;
+   }
+   .payment-gateway-section {
+      margin-top: 220px;
+   }
+   .payment-gateway-card {
+      margin: 0 10%;
+   }
+   .card-info h3 {
+      padding-bottom: 20px;
    }
 }
 
@@ -288,5 +370,60 @@
    .client-review-container {
       margin-left: 0px;
       border-radius: 0;
+   }
+   #dp-slider,
+   .dp-img img {
+      height: 160px;
+      width: 310px;
+   }
+   .dp-content,
+   .dp-img {
+      text-align: left;
+      height: 160px;
+      width: 310px;
+   }
+   .dp_item {
+      border-radius: 15px;
+   }
+   .hero-text {
+      font-size: 35px;
+      line-height: 40px;
+   }
+   .view-products-btn {
+      font-size: 15px;
+      padding: 8px 20px;
+      margin-top: 20px;
+   }
+   #dp-dots li {
+      height: 8px;
+      width: 8px;
+   }
+   .payment-gateway-section {
+      margin-top: 180px;
+   }
+   .card-info h3 {
+      font-size: 30px;
+      line-height: 35px;
+   }
+}
+
+@media (max-width: 420px) {
+   #dp-slider,
+   .dp-img img {
+      height: 120px;
+      width: 250px;
+   }
+   .dp-content,
+   .dp-img {
+      text-align: left;
+      height: 120px;
+      width: 250px;
+   }
+   .hero-text {
+      font-size: 25px;
+      line-height: 30px;
+   }
+   .hero-section-padding {
+      padding-bottom: 100px;
    }
 }

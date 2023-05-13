@@ -173,6 +173,10 @@ span.hero-text-highlight-2::after {
 
 /* payment gateway */
 
+.payment-gateway-section {
+   margin-top: 400px;
+}
+
 .card-list-header {
    background: #e4e7eb;
    border-radius: 42px 19px 24px 24px;
@@ -1056,4 +1060,17 @@ p.preview-slider-description {
 #client-slider .slick-prev {
    height: 70px;
    width: 70px;
+}
+
+/* Hero Section Slider */
+
+.hero-slider-container {
+   position: absolute;
+   left: 0;
+}
+
+.hero-section-padding {
+   padding-top: 100px;
+   padding-bottom: 200px;
+   position: relative;
 }

@@ -8,29 +8,29 @@ $("#client-slider").slick({
    autoplay: true,
    responsive: [
       {
-         breakpoint: 1080,
-         settings: {
-            slidesToShow: 4,
-         },
-      },
-
-      {
-         breakpoint: 992,
+         breakpoint: 1120,
          settings: {
             slidesToShow: 3,
          },
       },
 
       {
-         breakpoint: 768,
+         breakpoint: 992,
          settings: {
             slidesToShow: 2,
+         },
+      },
+
+      {
+         breakpoint: 768,
+         settings: {
+            slidesToShow: 1,
             arrows: true,
          },
       },
 
       {
-         breakpoint: 520,
+         breakpoint: 576,
          settings: {
             slidesToShow: 1,
             arrows: false,
@@ -86,7 +86,7 @@ $("#testimonial-slider").on("afterChange", function () {
 
 $("#hero-slider").stack_slider({
    autoPlaySpeed: 3000,
-   autoPlay: true,
+   autoPlay: false,
    dots: true,
    arrows: false,
    drag: true,
