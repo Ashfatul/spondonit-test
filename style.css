@@ -427,13 +427,15 @@ button.slick-arrow.slick-next::before {
    font-weight: 500;
    font-size: 24px;
    line-height: 28px;
-   color: #3f4654;
+   color: RGBA(63, 70, 84, 0.6);
+   margin-bottom: 35px;
 }
 
 .single-client {
    background: #ffffff;
    border: 1px solid rgba(63, 70, 84, 0.1);
    border-radius: 20px;
+   height: 140px;
 }
 
 .slick-slide {
@@ -744,6 +746,11 @@ footer {
 
 .review-start-container {
    margin-bottom: 50px;
+   display: flex;
+}
+
+.review-start-container img {
+   margin-right: 10px;
 }
 
 .review-author-container {
@@ -752,10 +759,12 @@ footer {
    width: fit-content;
    filter: drop-shadow(0px 4px 57px rgba(0, 0, 0, 0.1));
    padding: 15px;
+   min-width: 400px;
 }
 
 .client-review-container {
    margin-left: 50px;
+   position: relative;
 }
 
 .star-item {
@@ -841,10 +850,15 @@ img.reviewer:hover {
    position: absolute;
    bottom: -20px;
    right: 10%;
+   z-index: 1;
 }
 
 .review-next-previous-btn .btn-group .btn {
    padding: 10px 35px;
+}
+
+.review-container {
+   position: relative;
 }
 
 /* Dashboard preview section */
@@ -997,4 +1011,49 @@ p.preview-slider-description {
 }
 .dashboard-preview-slider .slick-dots li.slick-active button:before {
    color: #fff;
+}
+
+#client-slider .slick-prev::before {
+   content: url(./res/slider/slider-left-arrow.png);
+   background: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#client-slider .slick-next::before {
+   content: url(./res/slider/slider-left-arrow.png);
+   transform: rotate(180deg);
+   background: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#client-slider .slick-prev:hover::before {
+   content: url(./res/slider/slider-right-arrow.png);
+   transform: rotate(180deg);
+}
+
+#client-slider .slick-next:hover::before {
+   content: url(./res/slider/slider-right-arrow.png);
+   transform: rotate(0deg);
+}
+
+#client-slider .slick-prev:hover::before,
+#client-slider .slick-next:hover::before {
+   background: #4277ff;
+}
+#client-slider .slick-next {
+   right: -100px;
+}
+
+#client-slider .slick-prev {
+   left: -100px !important;
+}
+
+#client-slider .slick-next,
+#client-slider .slick-prev {
+   height: 70px;
+   width: 70px;
 }

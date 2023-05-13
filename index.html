@@ -257,32 +257,60 @@
 
                   <img
                      src="./res/testimonial/review-author-1.png"
-                     class="reviewer first active"
+                     class="reviewer reviewer0 first active"
+                     data-id="0"
                   />
 
                   <img
                      src="./res/testimonial/review-author-2.png"
-                     class="reviewer second"
+                     class="reviewer reviewer1 second"
+                     data-id="1"
                   />
 
                   <img
                      src="./res/testimonial/review-author-3.png"
-                     class="reviewer third"
+                     class="reviewer reviewer2 third"
+                     data-id="2"
                   />
 
                   <img
                      src="./res/testimonial/review-author-4.png"
-                     class="reviewer fourth"
+                     class="reviewer reviewer3 fourth"
+                     data-id="3"
                   />
 
                   <img
                      src="./res/testimonial/review-author-5.png"
-                     class="reviewer fifth"
+                     class="reviewer reviewer4 fifth"
+                     data-id="4"
                   />
                </div>
             </div>
-            <div class="col-lg-7 col-md-7 p-0">
-               <div class="client-review-container">
+            <div class="col-lg-7 col-md-7 p-0 review-container">
+               <div class="review-next-previous-btn">
+                  <div
+                     class="btn-group"
+                     role="group"
+                     aria-label="Basic example"
+                  >
+                     <button
+                        type="button"
+                        class="btn btn-primary prev-btn"
+                        onclick="prevTestimonial()"
+                     >
+                        PREV
+                     </button>
+                     <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="nextTestimonial()"
+                     >
+                        NEXT
+                     </button>
+                  </div>
+               </div>
+
+               <div class="client-review-container" id="testimonial-slider">
                   <div class="testimonial-item">
                      <div class="review-start-container">
                         <img
@@ -328,22 +356,186 @@
                            </div>
                         </div>
                      </div>
+                  </div>
 
-                     <div class="review-next-previous-btn">
-                        <div
-                           class="btn-group"
-                           role="group"
-                           aria-label="Basic example"
-                        >
-                           <button
-                              type="button"
-                              class="btn btn-primary prev-btn"
-                           >
-                              PREV
-                           </button>
-                           <button type="button" class="btn btn-primary">
-                              NEXT
-                           </button>
+                  <div class="testimonial-item">
+                     <div class="review-start-container">
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                     </div>
+
+                     <div class="review-details">
+                        "Aorasoft is a tech company based in Pakistan that
+                        specializes in software development, digital marketing,
+                        and website design. They have a good reputation for
+                        delivering quality work and providing excellent customer
+                        support at competitive pricing."
+                     </div>
+
+                     <div class="review-author-container">
+                        <div class="d-flex">
+                           <img
+                              src="./res/testimonial/review-author-2.png"
+                              alt=""
+                           />
+                           <div class="author">
+                              <div class="name">Jhon Ibrahim</div>
+                              <div class="designation">Manager at Google</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="testimonial-item">
+                     <div class="review-start-container">
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                     </div>
+
+                     <div class="review-details">
+                        "This tech company is based in India and provides
+                        software development, digital marketing, and website
+                        design services. The company has a reputation for
+                        delivering quality work and providing excellent customer
+                        support at competitive prices."
+                     </div>
+
+                     <div class="review-author-container">
+                        <div class="d-flex">
+                           <img
+                              src="./res/testimonial/review-author-3.png"
+                              alt=""
+                           />
+                           <div class="author">
+                              <div class="name">Mark Daniyel</div>
+                              <div class="designation">CEO at InfoTech</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="testimonial-item">
+                     <div class="review-start-container">
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                     </div>
+
+                     <div class="review-details">
+                        "This software company offers project management,
+                        collaboration, and customer relationship management
+                        software. Their products are user-friendly,
+                        customizable, and backed by responsive customer support.
+                        They also offer flexible pricing plans."
+                     </div>
+
+                     <div class="review-author-container">
+                        <div class="d-flex">
+                           <img
+                              src="./res/testimonial/review-author-4.png"
+                              alt=""
+                           />
+                           <div class="author">
+                              <div class="name">Luke Hobbs</div>
+                              <div class="designation">
+                                 Chairman at TechTips
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="testimonial-item">
+                     <div class="review-start-container">
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+
+                        <img
+                           src="./res/testimonial/star.png"
+                           alt="rating star"
+                        />
+                     </div>
+
+                     <div class="review-details">
+                        "This cloud computing and virtualization software
+                        company provides reliable and scalable solutions for
+                        businesses. Their products enable running applications
+                        in the cloud, as well as managing and securing
+                        virtualized environments. They are flexible,
+                        cost-effective, and offer excellent customer support."
+                     </div>
+
+                     <div class="review-author-container">
+                        <div class="d-flex">
+                           <img
+                              src="./res/testimonial/review-author-5.png"
+                              alt=""
+                           />
+                           <div class="author">
+                              <div class="name">Linkon DK</div>
+                              <div class="designation">
+                                 Web Developer at TechWorld
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>

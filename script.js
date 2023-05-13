@@ -48,3 +48,36 @@ $(".dashboard-preview-slider").slick({
    arrows: false,
    autoplay: true,
 });
+
+$("#testimonial-slider").slick({
+   dots: false,
+   infinite: true,
+   speed: 500,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   autoplay: true,
+});
+
+// Slider next previous
+
+const nextTestimonial = () => {
+   $("#testimonial-slider").slick("slickNext");
+};
+
+const prevTestimonial = () => {
+   $("#testimonial-slider").slick("slickPrev");
+};
+
+// Active Reviewer
+
+$(document).on("click", ".reviewer", function () {
+   const id = $(this).data("id");
+   $("#testimonial-slider").slick("slickGoTo", id);
+});
+
+$("#testimonial-slider").on("afterChange", function () {
+   var dataId = $(".slick-current").attr("data-slick-index");
+   $(".reviewer").removeClass("active");
+   $(`.reviewer${dataId}`).addClass("active");
+});
