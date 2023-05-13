@@ -1,11 +1,10 @@
-$(".slider").slick({
+$("#client-slider").slick({
    dots: false,
    infinite: true,
    speed: 500,
    slidesToShow: 1,
    slidesToScroll: 1,
    arrows: true,
-   //    mobileFirst: true,
    autoplay: true,
    responsive: [
       {
@@ -38,4 +37,14 @@ $(".slider").slick({
          },
       },
    ],
+});
+
+$(".dashboard-preview-slider").slick({
+   dots: true,
+   infinite: true,
+   speed: 500,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   autoplay: true,
 });

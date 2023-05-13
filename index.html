@@ -17,7 +17,7 @@
       <link
          rel="stylesheet"
          type="text/css"
-         href="http://kenwheeler.github.io/slick/slick/slick-theme.css"
+         href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
       />
       <link rel="stylesheet" href="style.css" />
       <link rel="stylesheet" href="responsive.css" />
@@ -365,6 +365,7 @@
 
          <div
             class="slider"
+            id="client-slider"
             data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'
          >
             <div>
@@ -401,8 +402,280 @@
       <!-- Brand Trust End -->
 
       <!-- Dashboard Preview Section Start -->
-      <div class="dashboard-preview-container text-center">
-         Dashboard Preview
+      <div
+         class="dashboard-preview-container container container-custom text-center mx-auto px-0"
+      >
+         <div class="preview-container row">
+            <div class="col-md-2 px-0">
+               <div class="preview-option-panel">
+                  <div class="panel-title">Useful Dashboard</div>
+                  <nav class="panel-tab-container">
+                     <div class="nav nav-tabs" role="tablist">
+                        <button
+                           class="nav-link active"
+                           data-bs-toggle="pill"
+                           data-bs-target="#admin"
+                           type="button"
+                           role="tab"
+                           aria-selected="true"
+                        >
+                           Admin
+                        </button>
+                        <button
+                           class="nav-link"
+                           data-bs-toggle="pill"
+                           data-bs-target="#customer"
+                           type="button"
+                           role="tab"
+                           aria-selected="false"
+                        >
+                           Customer
+                        </button>
+                        <button
+                           class="nav-link"
+                           data-bs-toggle="pill"
+                           data-bs-target="#seller"
+                           type="button"
+                           role="tab"
+                           aria-selected="false"
+                        >
+                           Seller
+                        </button>
+                     </div>
+                  </nav>
+
+                  <div class="tab-content">
+                     <div
+                        class="tab-pane fade show active"
+                        role="tabpanel"
+                        id="admin"
+                     >
+                        <nav class="preview-item-list-container">
+                           <div class="nav nav-tabs" role="tablist">
+                              <button
+                                 class="preview-item nav-link active"
+                                 data-bs-toggle="pill"
+                                 data-bs-target="#admin-dashboard"
+                                 type="button"
+                                 role="tab"
+                                 aria-selected="true"
+                              >
+                                 Dashboard
+                              </button>
+
+                              <button
+                                 class="preview-item nav-link"
+                                 data-bs-toggle="pill"
+                                 data-bs-target="#admin-support-ticket"
+                                 type="button"
+                                 role="tab"
+                                 aria-selected="false"
+                              >
+                                 Support Ticket
+                              </button>
+                           </div>
+                        </nav>
+                     </div>
+
+                     <div class="tab-pane fade" role="tabpanel" id="customer">
+                        <nav class="preview-item-list-container">
+                           <div class="nav nav-tabs" role="tablist">
+                              <button
+                                 class="preview-item nav-link"
+                                 data-bs-toggle="pill"
+                                 data-bs-target="#customer-order-status"
+                                 type="button"
+                                 role="tab"
+                                 aria-selected="false"
+                              >
+                                 Order Status
+                              </button>
+
+                              <button
+                                 class="preview-item nav-link"
+                                 data-bs-toggle="pill"
+                                 data-bs-target="#customer-wishlist"
+                                 type="button"
+                                 role="tab"
+                                 aria-selected="false"
+                              >
+                                 Wishlist
+                              </button>
+                           </div>
+                        </nav>
+                     </div>
+
+                     <div class="tab-pane fade" role="tabpanel" id="seller">
+                        <nav class="preview-item-list-container">
+                           <div class="nav nav-tabs" role="tablist">
+                              <button
+                                 class="preview-item nav-link"
+                                 data-bs-toggle="pill"
+                                 data-bs-target="#seller-product-list"
+                                 type="button"
+                                 role="tab"
+                                 aria-selected="false"
+                              >
+                                 Product List
+                              </button>
+
+                              <button
+                                 class="preview-item nav-link"
+                                 data-bs-toggle="pill"
+                                 data-bs-target="#seller-support"
+                                 type="button"
+                                 role="tab"
+                                 aria-selected="false"
+                              >
+                                 Support
+                              </button>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-10 px-0">
+               <div class="preview-slider">
+                  <h2 class="preview-slider-title">
+                     User Friendly Design For Customer & Admin
+                  </h2>
+                  <p class="preview-slider-description">
+                     Manage your eCommerce self managed or multi vendor with
+                     huge features like amazon, daraz, rich vendor or merchant
+                     feature, central product management system with lots of
+                     cool features included.
+                  </p>
+                  <div class="tab-content preview-slider">
+                     <div
+                        class="tab-pane fade show active slider"
+                        role="tabpanel"
+                        id="admin-dashboard"
+                     >
+                        <div class="dashboard-preview-slider">
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                        </div>
+                     </div>
+
+                     <div
+                        class="tab-pane fade show slider"
+                        role="tabpanel"
+                        id="admin-support-ticket"
+                     >
+                        <div class="dashboard-preview-slider">
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                        </div>
+                     </div>
+
+                     <div
+                        class="tab-pane fade show slider"
+                        role="tabpanel"
+                        id="customer-order-status"
+                     >
+                        <div class="dashboard-preview-slider">
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                        </div>
+                     </div>
+
+                     <div
+                        class="tab-pane fade show slider"
+                        role="tabpanel"
+                        id="customer-wishlist"
+                     >
+                        <div class="dashboard-preview-slider">
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                        </div>
+                     </div>
+
+                     <div
+                        class="tab-pane fade show slider"
+                        role="tabpanel"
+                        id="seller-product-list"
+                     >
+                        <div class="dashboard-preview-slider">
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                        </div>
+                     </div>
+
+                     <div
+                        class="tab-pane fade show slider"
+                        role="tabpanel"
+                        id="seller-support"
+                     >
+                        <div class="dashboard-preview-slider">
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                           <img
+                              src="./res/dashboard-preview-section/image1.png"
+                              alt=""
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
 
       <!-- Dashboard Preview Section End -->

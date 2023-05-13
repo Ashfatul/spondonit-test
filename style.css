@@ -846,3 +846,155 @@ img.reviewer:hover {
 .review-next-previous-btn .btn-group .btn {
    padding: 10px 35px;
 }
+
+/* Dashboard preview section */
+
+.preview-container {
+   position: relative;
+   margin: 100px 0;
+}
+
+.preview-option-panel {
+   background: #2c3341;
+   border-radius: 37px;
+   width: fit-content;
+   padding: 40px;
+   box-shadow: 10px 23px 50px rgba(0, 0, 0, 0.08);
+   border-left: 10px solid #4277ff;
+}
+.panel-title {
+   font-family: "Asap";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 32px;
+   line-height: 37px;
+   text-align: center;
+   color: #4277ff;
+   margin-bottom: 35px;
+}
+
+.panel-tab-container {
+   position: relative;
+}
+.panel-tab-container .nav-tabs {
+   justify-content: space-between;
+   border-bottom: none;
+}
+
+.panel-tab-container .nav-tabs .nav-link {
+   background: #2e3a54;
+   border: 0.5px solid #4277ff;
+   border-radius: 21px;
+   margin: 10px 5px;
+   padding: 5px 20px;
+}
+.panel-tab-container .nav-tabs .nav-link.active {
+   background: #4277ff;
+   border-radius: 21px;
+   color: #fff;
+   border-color: #4277ff;
+}
+
+.panel-tab-container .nav-tabs .nav-link:hover,
+.panel-tab-container .nav-tabs .nav-link:focus {
+   color: #fff;
+   border-color: transparent;
+}
+
+.panel-tab-container::before {
+   content: "";
+   height: 2px;
+   width: 80%;
+   background: #4277ff;
+   z-index: 1;
+   position: absolute;
+   left: 10%;
+   top: 50%;
+   transform: translateY(50%);
+}
+
+.panel-tab-container .nav-tabs .nav-link {
+   z-index: 2;
+}
+
+.preview-item-list-container .preview-item.nav-link {
+   background: rgba(66, 119, 255, 0.1);
+   border-radius: 10px;
+   font-family: "Asap";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #4277ff;
+   display: block;
+   padding: 20px;
+   width: 100%;
+   border: none;
+   margin-bottom: 22px;
+}
+
+.preview-item-list-container .nav-tabs {
+   border-bottom: none;
+}
+
+.tab-content {
+   margin-top: 40px;
+}
+
+.tab-content.preview-slider {
+   width: 80%;
+   margin-left: 20%;
+}
+
+.preview-item-list-container .nav-tabs .nav-link.active {
+   background: #4277ff;
+   color: #fff;
+}
+
+.preview-option-panel {
+   position: absolute;
+   top: 100px;
+   left: 110px;
+   z-index: 1;
+}
+
+.preview-slider {
+   background: #3c65f6;
+   border-radius: 73px 0px 0px 73px;
+   padding: 64px 0;
+   color: #fff;
+}
+
+h2.preview-slider-title {
+   font-family: "Asap";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 60px;
+   text-align: center;
+}
+
+p.preview-slider-description {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 30px;
+   text-align: center;
+   color: #ffffff;
+   opacity: 0.8;
+}
+.preview-slider-title,
+.preview-slider-description {
+   width: 80%;
+   margin-left: 20%;
+}
+.dashboard-preview-slider .slick-slide {
+   padding: 1px;
+}
+.dashboard-preview-slider .slick-dots {
+   bottom: -50px !important;
+}
+.dashboard-preview-slider .slick-dots li.slick-active button:before {
+   color: #fff;
+}
