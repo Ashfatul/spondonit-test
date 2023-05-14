@@ -1,3 +1,5 @@
+"use strict";
+
 (function ($) {
    $.fn.stack_slider = function (options) {
       // Sldier core functions

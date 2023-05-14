@@ -291,6 +291,12 @@
    .dashboard-preview-slider .slick-slide {
       border-radius: 25px;
    }
+   .important-link-and-right {
+      margin-top: 0px;
+   }
+   .software-collection-section {
+      margin: 100px 0;
+   }
 }
 
 @media (max-width: 767px) {
@@ -489,6 +495,15 @@
    }
    span.hero-text-highlight-2::after {
       height: 10px;
+   }
+   ul.links.footer-links li {
+      display: block;
+      flex-basis: 100%;
+      margin: 5px 0px;
+   }
+   .support-zone-links ul li,
+   .quick-link-links ul li {
+      margin-bottom: 10px;
    }
 }
 

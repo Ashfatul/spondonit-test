@@ -1,3 +1,5 @@
+"use strict";
+
 $("#client-slider").slick({
    dots: false,
    infinite: true,
