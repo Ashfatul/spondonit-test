@@ -963,6 +963,7 @@ img.reviewer:hover {
 .tab-content.preview-slider {
    width: 80%;
    margin-left: 20%;
+   min-height: 550px;
 }
 
 .preview-item-list-container .nav-tabs .nav-link.active {

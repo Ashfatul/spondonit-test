@@ -85,6 +85,9 @@
    .preview-option-panel {
       left: 120px;
    }
+   .tab-content.preview-slider {
+      min-height: 400px;
+   }
 }
 @media (max-width: 1120px) {
    #client-slider .slick-prev {
@@ -297,6 +300,9 @@
    .software-collection-section {
       margin: 100px 0;
    }
+   .tab-content.preview-slider {
+      min-height: 350px;
+   }
 }
 
 @media (max-width: 767px) {
@@ -376,6 +382,9 @@
    }
    span.hero-text-highlight-2::after {
       height: 15px;
+   }
+   .tab-content.preview-slider {
+      min-height: 200px;
    }
 }
 
